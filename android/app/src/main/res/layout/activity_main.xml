@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="kr.ac.kaist.csmacn.MainActivity"
+    android:keepScreenOn="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a file to transfer"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/activity_main_button_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"/>
+
+        <TextView
+            android:id="@+id/activity_main_textview_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Nothing selected"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/activity_main_linearlayout_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/activity_main_textview_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File Transfer Status"
+            android:textSize="18sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_main_textview_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Preparring.."/>
+
+            <TextView
+                android:id="@+id/activity_main_textview_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+
+
+        <ProgressBar
+            android:id="@+id/activity_main_progressbar_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:indeterminate="true"/>
+
+        <TextView
+            android:id="@+id/activity_main_textview_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/activity_main_button_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send file to the server"
+        android:layout_alignParentBottom="true"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/activity_main_textview_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/activity_main_button_send"
+        android:text="00:00"/>
+
+    <TextView
+        android:id="@+id/activity_main_textview_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simulation Settings\n\n"
+        android:layout_above="@id/activity_main_textview_time"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>
