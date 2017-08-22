@@ -22,7 +22,7 @@ I tested CSMA/CN in the following environments to implement the project and meas
 - Wi-Fi USB adapter: NEXT-202N mini (RTL8188CUS 802.11n WLAN adapter)
 - BLE USB adapter: NEXT-204BT (Cambridge Silicon Radio Ltd Bluetooth Dongle)
 
-![setup](/images/setup.png){: .center-image}
+![setup](/images/setup.png)
 
 I strongly recommend you to use the same setup to test it.
 
@@ -126,7 +126,7 @@ It runs as a Wi-Fi AP with a router IP address 192.168.43.1 that assigns IP addr
     sudo node <server_files_location>/udp.js false false
     ```
 
-    ![server_run](/images/server_run.png){: .center-image}
+    ![server_run](/images/server_run.png)
 
     **Parameter explanation:**  
         - the first one represents the existence of hidden terminal problem.  
@@ -142,25 +142,25 @@ It runs as a Wi-Fi AP with a router IP address 192.168.43.1 that assigns IP addr
 
 - First, connect to the RPiAP Wi-Fi AP.
 
-![connect_wifi](/images/connect.png){: .center-image}
+![connect_wifi](/images/connect.png)
 
 - In andorid application, you first select a file to send.
 
-![choose_file](/images/chhose_file.png){: .center-image}
+![choose_file](/images/chhose_file.png)
 
 - Click send button to measure the transmission performance.  
 You can see the current simulation setup and the transmission status.
 
-![transfer](/images/transfer.png){: .center-image}
+![transfer](/images/transfer.png)
 
 ### 6. Sample Result
 
-![performance](/images/performance.png){: .center-image}
+![performance](/images/performance.png)
 
-![performance](/images/performance2.png){: .center-image}
+![performance](/images/performance2.png)
 
-![performance](/images/performance3.png){: .center-image}
+![performance](/images/performance3.png)
 
-![performance](/images/performance4.png){: .center-image}
+![performance](/images/performance4.png)
 
-![performance](/images/performance5.png){: .center-image}
+![performance](/images/performance5.png)
